@@ -425,10 +425,10 @@ a {
 }
 .card-member {
   display: flex;
-  justify-content: center;
-  justify-items: center;
-  width: 1280px;
+  /* justify-content: center;
+  justify-items: center; */
   position: relative;
+  width: 1280px;
   height: 274px;
   background: linear-gradient(89.96deg, #540c78 -0.08%, #7c0374 99.81%);
   border-radius: 16px;
@@ -442,7 +442,7 @@ a {
   color: #ffffff;
   width: 553px;
   height: 30px;
-  margin: 56px 0 0 0;
+  margin: 56px 0 0 117px;
 }
 .member .card-member .main-card {
   width: 605px;
@@ -452,6 +452,7 @@ a {
   line-height: 150%;
   text-transform: capitalize;
   color: #ffffff;
+  margin: 0 0 0 117px;
 }
 
 .join {
@@ -469,6 +470,7 @@ a {
   border-radius: 8px;
   gap: 10px;
   margin-top: 24px;
+  margin: 28px 0 0 117px;
 }
 .join img {
   padding-left: 23px;
@@ -479,9 +481,130 @@ a {
   line-height: 150%;
 }
 .icon-tower {
-  position: absolute;
+    position: absolute;
   width: 439px;
   height: 256px;
   left: 818px;
   top: 18px;
+}
+
+.container-invest {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    max-width: 1500px;
+    margin: 50px auto;
+  }
+  .invest {
+    border: #772f8b solid 1px;
+    box-sizing: border-box;
+    width: 316px;
+    position: relative;
+    height: 600px;
+    left: 0px;
+    top: 0px;
+    border-radius: 8px;
+  }
+  .img-product img {
+    /* position: absolute; */
+    width: 296px;
+    height: 285px;
+    border-radius: 8px;
+    margin: 8px 0px 8px 8px;
+  }
+  .address-invest{
+    display: flex;
+    margin: 0 0 0 8px;
+  }
+  .address-invest p{
+    font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+  }
+.name-invest{
+    font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+margin: 8px 0 0 8px;
+}
+.slot-invest{
+    display: flex;
+    margin: 8px 0 0 8px;
+}
+.slot-invest p{
+    font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+margin-left: 5px;
+}
+.status-invest p{
+    font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+margin: 8px 0 0 8px;
+}
+.time-invest{
+    display: flex;
+    margin: 8px 0 0 8px;   
+}
+.time-left{
+    display: flex;
+}
+.text-time{
+    font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+margin-left: 5px;
+}
+.time-right p{
+
+    font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+margin-left: 120px;
+}
+.profit-invest{
+    display: flex;
+    margin: 8px 0 0 8px;
+}
+.profit-left{
+    display: flex;
+}
+.text-profit{
+    font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+margin-left: 5px;
+}
+.profit-right{
+    margin-left: 140px;
+    font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+}
+
+/* .range-slide{
+    width: 143.48px;
+height: 4px;
+left: 6px;
+top: 226px;
+} */
+.people-join{
+    display: flex;
+    margin: 8px 0 0 8px;
+}
+.percentage{
+    font-weight: 700;
+font-size: 12px;
+line-height: 150%;
+margin-left: 120px;
+}
+.detail .detail-invest {
+    margin-top: 24px;
+}
+.logo-brand{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    margin-top: 60px;
 }

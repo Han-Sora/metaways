@@ -608,3 +608,9 @@ margin-left: 120px;
     flex-flow: row nowrap;
     margin-top: 60px;
 }
+
+.dot{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}

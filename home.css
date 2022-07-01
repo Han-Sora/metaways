@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-item {
+  width: 68px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+.nav-item{
+    width: auto;
+    height: auto;
+    margin-right: 24px;
+}
+.container-fluid{
+    width: auto;
+}
+.post{
+    background-color: #853A93;
+text-align: center;
+}
+.nav-link.postpost{
+    padding: 11px 24px;
+    background-color: #853A93;
+}

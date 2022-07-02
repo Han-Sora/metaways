@@ -39,9 +39,41 @@ header video {
 
 header .container {
   position: relative;
-  z-index: 2;
 }
-
+.d-flex{
+  margin:0 auto;
+}
+.d-flex.social-header{
+  max-width: 1550px;
+}
+.btn-download{
+  padding: 2px 1px 1px 1px;
+  margin: 0;
+  background-color: #853a93;
+  border-radius: 8px;
+}
+.btn-download a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+}
+hr{
+  width: auto;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+.container.btn-exp{
+  justify-content: space-between;
+  padding: 0;
+  max-width: 430px;
+}
+.container.btn-behind{
+  justify-content: space-between;
+  max-width: 1264px;
+  padding: 0;
+}
 header .overlay {
   position: absolute;
   top: 0;
@@ -58,8 +90,10 @@ header .overlay {
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
-    padding: 11px 16px;
 }
+/* .navbar-nav.nav-link{
+  padding: 8px 16px;
+} */
 
 .dropdown {
   color: #ffffff;
@@ -112,6 +146,27 @@ header .overlay {
   -webkit-text-fill-color: transparent;
   margin-top: 131px;
 }
+.mn{
+  background-color: #853a93;
+  border-radius: 8px;
+}
+.container h1{
+  font-weight: 700;
+font-size: 40px;
+line-height: 150%;
+color: #ffffff;
+}
+.container h6{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+color: #ffffff;
+}
+.container .join{
+  margin: 0;
+  box-shadow: none;
+}
+
 /* end header */
 .btn.sell {
   width: 145px;
@@ -125,9 +180,6 @@ header .overlay {
 }
 .border {
   border-radius: 8px;
-}
-.dropdown-toggle {
-  margin-right: 24px;
 }
 .btn-bds {
   width: 1440px;
@@ -198,6 +250,7 @@ height: 202px;
   -webkit-line-clamp: 3;
   line-height: 1.6rem;
 }
+
 .card-member {
   display: flex;
   /* justify-content: center;

@@ -12,38 +12,36 @@
 </head>
 
 <body>
-
     <div class="bg-all">
-        <header>
-            <video id="homepage-video" preload="auto" autoplay="true" loop="loop" muted volume="0">
-                <source src="img/homepage-video.mp4" type="video/webm" />
+        <header class="position-relative">
 
-                <source src="img/homepage-video.mp4" type="video/mp4" />
-            </video>
-            <div class="d-flex social-header my-3 position-relative justify-content-end">
-                <div class="icon-social">
-                    <a href="#" class="m-2"><img src="img/fb-w.png" alt="" /></a>
-                </div>
-                <div class="icon-social">
-                    <a href="#" class="m-2"><img src="img/in-w.png" alt="" /></a>
-                </div>
-                <div class="icon-social">
-                    <a href="#" class="m-2"><img src="img/tw-w.png" alt="" /></a>
-                </div>
-                <div class="icon-social">
-                    <a href="#" class="m-2"><img src="img/yt-w.png" alt="" /></a>
-                </div>
-                <div class="icon-social">
-                    <a href="#" class="m-2"><img src="img/FAQ.png" alt="" /></a>
-                </div>
-                <div class="btn-download">
-                    <a href="#" class="m-2">Tải ứng dụng</a>
-                </div>
-                <div class="btn-social">
-                    <a href="#" class="m-2"><img src="img/world.png" alt="" /></a>
+
+            <div class=" d-flex social-header justify-content-end  my-3">
+                <div class="nav">
+                    <div class="icon-social pt-1">
+                        <a href="#" class="m-2"><img src="img/fb-w.png" alt="" /></a>
+                    </div>
+                    <div class="icon-social pt-1">
+                        <a href="#" class="m-2"><img src="img/in-w.png" alt="" /></a>
+                    </div>
+                    <div class="icon-social pt-1">
+                        <a href="#" class="m-2"><img src="img/tw-w.png" alt="" /></a>
+                    </div>
+                    <div class="icon-social pt-1">
+                        <a href="#" class="m-2"><img src="img/yt-w.png" alt="" /></a>
+                    </div>
+                    <div class="icon-social pt-1">
+                        <a href="#" class="m-2"><img src="img/FAQ.png" alt="" /></a>
+                    </div>
+                    <div class="btn-download">
+                        <a href="#" class="m-3">Tải ứng dụng</a>
+                    </div>
+                    <div class="btn-social">
+                        <a href="#" class="m-2"><img src="img/world.png" alt="" /></a>
+                    </div>
                 </div>
             </div>
-            <hr>
+            <hr />
 
             <nav class="navbar navbar-expand-sm">
                 <div class="container-fluid">
@@ -85,7 +83,7 @@
                                     <span class="navbar-toggler-icon"></span>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item " href="#">Mua bán</a></li>
+                                    <li><a class="dropdown-item" href="#">Mua bán</a></li>
                                     <li><a class="dropdown-item" href="#">Cho thuê</a></li>
                                     <li><a class="dropdown-item" href="#">Dự án</a></li>
                                     <li><a class="dropdown-item" href="#">Giao dịch</a></li>
@@ -98,54 +96,55 @@
                     </div>
                 </div>
             </nav>
+        </header>
+        <div class="container banner position-relative">
+
+            <video id="homepage-video" class="position-absolute" preload="auto" autoplay="true" loop="loop" muted
+                volume="0">
+                <source src="img/homepage-video.mp4" type="video/mp4" />
+            </video>
 
             <div class="container mt-5 pt-5 position-relative">
                 <h1>Tìm kiếm ngôi nhà ước mơ của bạn</h1>
-            </div>
-            <div class="container p-2 position-relative">
-                <div class="sm-text">
-                    <h6>Trải nghiệm và đầu tư Bất động sản cùng Pindias</h6>
+                <h6 class="sm-text">Trải nghiệm và đầu tư Bất động sản cùng Pindias</h6>
+                <div class="btn-exp gy-4">
+                    <a href="#" class="d-flex align-items-lg-center"><img src="img/VR.png" alt="" />Trải nghiệm VR</a>
+                    <a href="#" class="d-flex align-items-lg-center"><img src="img/VR.png" alt="" />Trải nghiệm VR</a>
                 </div>
             </div>
-            <div class="container btn-exp gy-4 position-relative">
-                <div class="join">
-                    <img src="img/VR.png" alt="">
-                    <div class="join-btn">
-                        <a href="#" class="position-relative">Trải nghiệm VR</a>
-                    </div>
-                </div>
-                <div class="join">
-                    <img src="img/human1.png" alt="">
-                    <div class="join-btn">
-                        <a href="#" class="position-relative">Tham gia đầu tư</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
+            <div class="container flex-column position-absolute">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Mua bán</a>
+                        <a class="nav-link" href="#">Mua bán</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Cho thuê</a>
+                        <a class="nav-link" href="#">Cho thuê</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Dự án</a>
+                        <a class="nav-link" href="#">Dự án</a>
                     </li>
-                  </ul>
+                </ul>
+
+                <div class="d-flex search">
+                    <div class="txt-img">
+                        <img src="img/Vector.png" class="px-2 img-search" alt="" />
+
+                        <input type="text" class="txt-search border-none"
+                            placeholder="City, Neighborhood, Address, School District, Zip" />
+                    </div>
+
+                    <a href="#" class="btn btn-search">Tìm kiếm</a>
+                </div>
             </div>
 
-        </header>
+        </div>
 
-        <div class="container">
+
+        <div class="container position-relative">
             <div class="header-text">
                 <h2>Bất động sản cho bạn</h2>
             </div>
         </div>
-
-
-
 
         <div class="container btn-behind">
             <div class="btn-group left">
@@ -167,361 +166,379 @@
 
         <div class="container mt-3">
             <!-- start -->
-            <div class="card p-2 m-3" style="width: 400px">
+            <div class="card p-2 m-3" style="height: 470px; width: 400px">
                 <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
 
                 <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
+                    <div class="container price justify-content-between mt-2 p-0">
+                        <h5>5.5 tỷ</h5>
+                        <div class="d-flex justify-content-between mt-1 mx-0">
+                            <p class="card-text ps-3">
+                                <img src="img/bedroom.png" class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Group.png " class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Path.png " class="pe-1" alt=" " />70.8m2
+                            </p>
                         </div>
                     </div>
-                    <p class="card-text">
+                    <p class="card-text decribe">
                         Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
                     </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
+                    <div class="container adr-img p-0">
+                        <img src="img/clock.png " class="me-1" alt=" " />
+                        <p class="card-text adr">
+                            Tô Hiến Thành, Phường 14, Quận 10, Hồ Chí Minh
+                        </p>
+                    </div>
+                    <p class="card-text time pt-3 pb-0">
+                        <img src="img/address.png " class="me-1" alt=" " />2 giờ trước
                     </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <div class="container p-0">
+                        <a href="# " class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
             <!-- end -->
-            <div class="card p-2 m-3" style="width: 400px">
+            <div class="card p-2 m-3" style="height: 470px; width: 400px">
                 <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
 
                 <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
+                    <div class="container price justify-content-between mt-2 p-0">
+                        <h5>5.5 tỷ</h5>
+                        <div class="d-flex justify-content-between mt-1 mx-0">
+                            <p class="card-text ps-3">
+                                <img src="img/bedroom.png" class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Group.png " class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Path.png " class="pe-1" alt=" " />70.8m2
+                            </p>
                         </div>
                     </div>
-                    <p class="card-text">
+                    <p class="card-text decribe">
                         Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
                     </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
+                    <div class="container adr-img p-0">
+                        <img src="img/clock.png " class="me-1" alt=" " />
+                        <p class="card-text adr">
+                            Tô Hiến Thành, Phường 14, Quận 10, Hồ Chí Minh
+                        </p>
+                    </div>
+                    <p class="card-text time pt-3">
+                        <img src="img/address.png " class="me-1" alt=" " />2 giờ trước
                     </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <div class="container p-0">
+                        <a href="# " class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
-            <div class="card p-2 m-3" style="width: 400px">
+            <div class="card p-2 m-3" style="height: 470px; width: 400px">
                 <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
 
                 <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
+                    <div class="container price justify-content-between mt-2 p-0">
+                        <h5>5.5 tỷ</h5>
+                        <div class="d-flex justify-content-between mt-1 mx-0">
+                            <p class="card-text ps-3">
+                                <img src="img/bedroom.png" class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Group.png " class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Path.png " class="pe-1" alt=" " />70.8m2
+                            </p>
                         </div>
                     </div>
-                    <p class="card-text">
+                    <p class="card-text decribe">
                         Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
                     </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
+                    <div class="container adr-img p-0">
+                        <img src="img/clock.png " class="me-1" alt=" " />
+                        <p class="card-text adr">
+                            Tô Hiến Thành, Phường 14, Quận 10, Hồ Chí Minh
+                        </p>
+                    </div>
+                    <p class="card-text time pt-3">
+                        <img src="img/address.png " class="me-1" alt=" " />2 giờ trước
                     </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <div class="container p-0">
+                        <a href="# " class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
-            <div class="card p-2 m-3" style="width: 400px">
+            <div class="card p-2 m-3" style="height: 470px; width: 400px">
                 <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
 
                 <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
+                    <div class="container price justify-content-between mt-2 p-0">
+                        <h5>5.5 tỷ</h5>
+                        <div class="d-flex justify-content-between mt-1 mx-0">
+                            <p class="card-text ps-3">
+                                <img src="img/bedroom.png" class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Group.png " class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Path.png " class="pe-1" alt=" " />70.8m2
+                            </p>
                         </div>
                     </div>
-                    <p class="card-text">
+                    <p class="card-text decribe">
                         Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
                     </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
+                    <div class="container adr-img p-0">
+                        <img src="img/clock.png " class="me-1" alt=" " />
+                        <p class="card-text adr">
+                            Tô Hiến Thành, Phường 14, Quận 10, Hồ Chí Minh
+                        </p>
+                    </div>
+                    <p class="card-text time pt-3">
+                        <img src="img/address.png " class="me-1" alt=" " />2 giờ trước
                     </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <div class="container p-0">
+                        <a href="# " class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container mt-3">
             <!-- start -->
-            <div class="card p-2 m-3" style="width: 400px">
+            <div class="card p-2 m-3" style="height: 470px; width: 400px">
                 <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
 
                 <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
+                    <div class="container price justify-content-between mt-2 p-0">
+                        <h5>5.5 tỷ</h5>
+                        <div class="d-flex justify-content-between mt-1 mx-0">
+                            <p class="card-text ps-3">
+                                <img src="img/bedroom.png" class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Group.png " class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Path.png " class="pe-1" alt=" " />70.8m2
+                            </p>
                         </div>
                     </div>
-                    <p class="card-text">
+                    <p class="card-text decribe">
                         Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
                     </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
+                    <div class="container adr-img p-0">
+                        <img src="img/clock.png " class="me-1" alt=" " />
+                        <p class="card-text adr">
+                            Tô Hiến Thành, Phường 14, Quận 10, Hồ Chí Minh
+                        </p>
+                    </div>
+                    <p class="card-text time pt-3">
+                        <img src="img/address.png " class="me-1" alt=" " />2 giờ trước
                     </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <div class="container p-0">
+                        <a href="# " class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
             <!-- end -->
-            <div class="card p-2 m-3" style="width: 400px">
+            <div class="card p-2 m-3" style="height: 470px; width: 400px">
                 <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
 
                 <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
+                    <div class="container price justify-content-between mt-2 p-0">
+                        <h5>5.5 tỷ</h5>
+                        <div class="d-flex justify-content-between mt-1 mx-0">
+                            <p class="card-text ps-3">
+                                <img src="img/bedroom.png" class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Group.png " class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Path.png " class="pe-1" alt=" " />70.8m2
+                            </p>
                         </div>
                     </div>
-                    <p class="card-text">
+                    <p class="card-text decribe">
                         Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
                     </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
+                    <div class="container adr-img p-0">
+                        <img src="img/clock.png " class="me-1" alt=" " />
+                        <p class="card-text adr">
+                            Tô Hiến Thành, Phường 14, Quận 10, Hồ Chí Minh
+                        </p>
+                    </div>
+                    <p class="card-text time pt-3">
+                        <img src="img/address.png " class="me-1" alt=" " />2 giờ trước
                     </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <div class="container p-0">
+                        <a href="# " class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
-            <div class="card p-2 m-3" style="width: 400px">
+            <div class="card p-2 m-3" style="height: 470px; width: 400px">
                 <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
 
                 <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
+                    <div class="container price justify-content-between mt-2 p-0">
+                        <h5>5.5 tỷ</h5>
+                        <div class="d-flex justify-content-between mt-1 mx-0">
+                            <p class="card-text ps-3">
+                                <img src="img/bedroom.png" class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Group.png " class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Path.png " class="pe-1" alt=" " />70.8m2
+                            </p>
                         </div>
                     </div>
-                    <p class="card-text">
+                    <p class="card-text decribe">
                         Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
                     </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
+                    <div class="container adr-img p-0">
+                        <img src="img/clock.png " class="me-1" alt=" " />
+                        <p class="card-text adr">
+                            Tô Hiến Thành, Phường 14, Quận 10, Hồ Chí Minh
+                        </p>
+                    </div>
+                    <p class="card-text time pt-3">
+                        <img src="img/address.png " class="me-1" alt=" " />2 giờ trước
                     </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <div class="container p-0">
+                        <a href="# " class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
-            <div class="card p-2 m-3" style="width: 400px">
+            <div class="card p-2 m-3" style="height: 470px; width: 400px">
                 <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
 
                 <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
+                    <div class="container price justify-content-between mt-2 p-0">
+                        <h5>5.5 tỷ</h5>
+                        <div class="d-flex justify-content-between mt-1 mx-0">
+                            <p class="card-text ps-3">
+                                <img src="img/bedroom.png" class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Group.png " class="pe-1" alt=" " />2
+                            </p>
+                            <p class="card-text ps-3">
+                                <img src="img/Path.png " class="pe-1" alt=" " />70.8m2
+                            </p>
                         </div>
                     </div>
-                    <p class="card-text">
+                    <p class="card-text decribe">
                         Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
                     </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
+                    <div class="container adr-img p-0">
+                        <img src="img/clock.png " class="me-1" alt=" " />
+                        <p class="card-text adr">
+                            Tô Hiến Thành, Phường 14, Quận 10, Hồ Chí Minh
+                        </p>
+                    </div>
+                    <p class="card-text time pt-3">
+                        <img src="img/address.png " class="me-1" alt=" " />2 giờ trước
                     </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <div class="container p-0">
+                        <a href="# " class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="container pt-5">
-            <button class="btn border">Xem tất cả</button>
+            <button class="btn">Xem tất cả</button>
         </div>
 
-        <div class="container">
-            <div class="header-text">
+        <div class="container mb-5">
+            <div class="header-text mt-5 pt-5">
                 <h2>Tin tức</h2>
             </div>
         </div>
 
         <div class="container">
             <div class="big-content">
-                <img src="img/Rectangle 974.png" alt="" />
-                <h5>Gỡ điểm nghẽn khi thu hút vốn FDI cho bất động sản công nghiệp</h5>
+                <img src="img/Rectangle 974.png " alt=" " />
+                <h5 class="my-3">
+                    Gỡ điểm nghẽn khi thu hút vốn FDI cho bất động sản công nghiệp
+                </h5>
                 <h6>
-                    Thời gian qua, Việt Nam được ghi nhận là điểm đến hấp dẫn hàng đầu cho
-                    các nhà đầu tư nước ngoài. Dòng vốn FDI liên tục đổ vào Việt Nam từ
-                    khắp nơi trên thế giới nhờ hàng loạt những cải cách môi trường đầu tư
-                    và các hiệp định thương mại mà Việt Nam đã ký.
+                    Thời gian qua, Việt Nam được ghi nhận là điểm đến hấp dẫn hàng đầu cho các nhà đầu tư nước ngoài.
+                    Dòng vốn FDI liên tục đổ vào Việt Nam từ khắp nơi trên thế giới nhờ hàng loạt những cải cách môi
+                    trường đầu tư và các hiệp định thương mại mà Việt Nam đã
+                    ký.
                 </h6>
             </div>
             <div class="container">
                 <div class="row row-cols-2">
-                    <div class="col">
+                    <div class="col mb-4 px-0">
                         <div class="container">
-                            <div>
-                                <img src="img/Rectangle 974 (1).png" alt="">
+                            <div class="me-3">
+                                <img src="img/Rectangle 974 (1).png " alt=" " />
                             </div>
-                            <div class="news-content text-truncate">
-                                <h5>Chuyên gia lo ngại "cơn sốt đất ảo” sau thông tin quy hoạch sân bay tại Thường Tín
+                            <div class="news-content">
+                                <h5 class="mb-4">
+                                    Chuyên gia lo ngại "cơn sốt đất ảo” sau thông tin quy hoạch sân bay tại Thường Tín
                                 </h5>
-                                <h6>Dù việc xây dựng sân bay thứ 2 tại Hà Nội mới chỉ là định hướng quy hoạch, thế nhưng
-                                    giới
-                                    "cò đất" đã nhanh chóng đẩy giá nhà đất khu vực này lên cao.</h6>
+                                <h6>
+                                    Dù việc xây dựng sân bay thứ 2 tại Hà Nội mới chỉ là định hướng quy hoạch, thế nhưng
+                                    giới "cò đất" đã nhanh chóng đẩy giá nhà đất khu vực này lên cao.
+                                </h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="container">
-                            <div>
-                                <img src="img/Rectangle 974 (3).png" alt="">
+                    <div class="col mb-4 px-0">
+                        <div class="container px-0">
+                            <div class="me-3">
+                                <img src="img/Rectangle 974 (3).png " alt=" " />
                             </div>
-                            <div class="news-content text-truncate">
-                                <h5>Chuyên gia lo ngại "cơn sốt đất ảo” sau thông tin quy hoạch sân bay tại Thường Tín
+                            <div class="news-content">
+                                <h5 class="mb-4">
+                                    Chuyên gia lo ngại "cơn sốt đất ảo” sau thông tin quy hoạch sân bay tại Thường Tín
                                 </h5>
-                                <h6>Dù việc xây dựng sân bay thứ 2 tại Hà Nội mới chỉ là định hướng quy hoạch, thế nhưng
-                                    giới
-                                    "cò đất" đã nhanh chóng đẩy giá nhà đất khu vực này lên cao.</h6>
+                                <h6>
+                                    Dù việc xây dựng sân bay thứ 2 tại Hà Nội mới chỉ là định hướng quy hoạch, thế nhưng
+                                    giới "cò đất" đã nhanh chóng đẩy giá nhà đất khu vực này lên cao.
+                                </h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col mb-4 px-0">
                         <div class="container">
-                            <div>
-                                <img src="img/Rectangle 974 (2).png" alt="">
+                            <div class="me-3">
+                                <img src="img/Rectangle 974 (2).png " alt=" " />
                             </div>
-                            <div class="news-content text-truncate">
-                                <h5>Chuyên gia lo ngại "cơn sốt đất ảo” sau thông tin quy hoạch sân bay tại Thường Tín
+                            <div class="news-content">
+                                <h5 class="mb-4">
+                                    Chuyên gia lo ngại "cơn sốt đất ảo” sau thông tin quy hoạch sân bay tại Thường Tín
                                 </h5>
-                                <h6>Dù việc xây dựng sân bay thứ 2 tại Hà Nội mới chỉ là định hướng quy hoạch, thế nhưng
-                                    giới
-                                    "cò đất" đã nhanh chóng đẩy giá nhà đất khu vực này lên cao.</h6>
+                                <h6>
+                                    Dù việc xây dựng sân bay thứ 2 tại Hà Nội mới chỉ là định hướng quy hoạch, thế nhưng
+                                    giới "cò đất" đã nhanh chóng đẩy giá nhà đất khu vực này lên cao.
+                                </h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="container">
-                            <div>
-                                <img src="img/Rectangle 974 (4).png" alt="">
+                    <div class="col mb-4 px-0">
+                        <div class="container px-0">
+                            <div class="me-3">
+                                <img src="img/Rectangle 974 (4).png " alt=" " />
                             </div>
-                            <div class="news-content text-truncate">
-                                <h5>Chuyên gia lo ngại "cơn sốt đất ảo” sau thông tin quy hoạch sân bay tại Thường Tín
+                            <div class="news-content">
+                                <h5 class="mb-4">
+                                    Chuyên gia lo ngại "cơn sốt đất ảo” sau thông tin quy hoạch sân bay tại Thường Tín
                                 </h5>
-                                <h6>Dù việc xây dựng sân bay thứ 2 tại Hà Nội mới chỉ là định hướng quy hoạch, thế nhưng
-                                    giới
-                                    "cò đất" đã nhanh chóng đẩy giá nhà đất khu vực này lên cao.</h6>
+                                <h6>
+                                    Dù việc xây dựng sân bay thứ 2 tại Hà Nội mới chỉ là định hướng quy hoạch, thế nhưng
+                                    giới "cò đất" đã nhanh chóng đẩy giá nhà đất khu vực này lên cao.
+                                </h6>
                             </div>
                         </div>
                     </div>
@@ -529,7 +546,11 @@
             </div>
         </div>
 
-        <div class="member">
+        <div class="container pt-5">
+            <button class="btn">Xem tất cả</button>
+        </div>
+
+        <div class="member pt-5 mt-5">
             <div class="card-member">
                 <div class="card-content">
                     <div class="header-card">
@@ -552,7 +573,7 @@
         </div>
 
         <div class="container">
-            <div class="header-text">
+            <div class="header-text my-5 pt-5">
                 <h2>Dự án nổi bật</h2>
             </div>
         </div>
@@ -582,282 +603,491 @@
                 <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
 
                 <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
-                        </div>
+                    <div class="icon">
+                        <p class="card-text adr my-2">
+                            <img src="img/clock.png" class="pe-1" alt="" />Phu Quoc, Vietnam
+                        </p>
                     </div>
-                    <p class="card-text">
-                        Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
-                    </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
-                    </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <h5 class="card-text title">Metaway Grand City</h5>
+                    <div>
+                        <p class="card-text slot py-2">
+                            <img src="img/slot.png" class="pe-1" alt="" />1000 suất
+                        </p>
+                    </div>
+                    <p class="card-text status m-0 py-2">Đang mở bán</p>
+                    <div class="container justify-content-between mt-2 p-0">
+                        <p class="card-text time">
+                            <img src="img/address.png" class="pe-1" alt=" " />Thời gian đầu tư
+                        </p>
+                        <p>6 tháng</p>
+                    </div>
+                    <div class="container justify-content-between p-0 ">
+                        <p class="card-text profit p-0 ">
+                            <img src=" img/profit.png " class="pe-1 " alt=" " />Lợi nhuận kỳ vọng
+                        </p>
+                        <p>20%</p>
+                    </div>
+                    <div class="progress ">
+                        <div class="progress-bar " style="width: 50% "></div>
+                    </div>
+                    <div class="container people justify-content-between p-0 ">
+                        <p class="card-text ">500 nhà đầu tư</p>
+                        <p>5000/10000</p>
+                    </div>
+
+                    <div class="container p-0 ">
+                        <a href=" # " class="btn btn-detail ">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
             <!-- end -->
-            <div class="card p-2 m-3" style="width: 400px">
-                <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
+            <div class="card p-2 m-3 " style="width: 400px ">
+                <img class="card-img-top " src="img/product2.png " alt="Card image " style="width: 100% " />
 
-                <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
-                        </div>
+                <div class="card-body ">
+                    <div class="icon ">
+                        <p class="card-text adr my-2 ">
+                            <img src="img/clock.png " class="pe-1 " alt=" " />Phu Quoc, Vietnam
+                        </p>
                     </div>
-                    <p class="card-text">
-                        Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
-                    </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
-                    </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <h5 class="card-text title ">Metaway Grand City</h5>
+                    <div>
+                        <p class="card-text slot py-2 ">
+                            <img src="img/slot.png " class="pe-1 " alt=" " />1000 suất
+                        </p>
+                    </div>
+                    <p class="card-text status m-0 py-2 ">Đang mở bán</p>
+                    <div class="container justify-content-between mt-2 p-0 ">
+                        <p class="card-text time ">
+                            <img src="img/address.png " class="pe-1 alt=" " />Thời gian đầu tư
+                        </p>
+                        <p>6 tháng</p>
+                    </div>
+                    <div class=" container justify-content-between p-0 ">
+                        <p class=" card-text profit p-0 ">
+                            <img src=" img/profit.png " class=" pe-1 " alt=" " />Lợi nhuận kỳ vọng
+                        </p>
+                        <p>20%</p>
+                    </div>
+                    <div class=" progress ">
+                        <div class=" progress-bar " style=" width: 50% "></div>
+                    </div>
+                    <div class=" container people justify-content-between p-0 ">
+                        <p class=" card-text ">500 nhà đầu tư</p>
+                        <p>5000/10000</p>
+                    </div>
+
+                    <div class=" container p-0 ">
+                        <a href=" # " class=" btn btn-detail ">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
-            <div class="card p-2 m-3" style="width: 400px">
-                <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
+            <div class=" card p-2 m-3 " style=" width: 400px ">
+                <img class=" card-img-top " src=" img/product2.png " alt=" Card image " style=" width: 100% " />
 
-                <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
-                        </div>
+                <div class=" card-body ">
+                    <div class=" icon ">
+                        <p class=" card-text adr my-2 ">
+                            <img src=" img/clock.png " class=" pe-1 " alt=" " />Phu Quoc, Vietnam
+                        </p>
                     </div>
-                    <p class="card-text">
-                        Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
-                    </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
-                    </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <h5 class=" card-text title ">Metaway Grand City</h5>
+                    <div>
+                        <p class=" card-text slot py-2 ">
+                            <img src=" img/slot.png " class=" pe-1 " alt=" " />1000 suất
+                        </p>
+                    </div>
+                    <p class=" card-text status m-0 py-2 ">Đang mở bán</p>
+                    <div class=" container justify-content-between mt-2 p-0 ">
+                        <p class=" card-text time ">
+                            <img src=" img/address.png " class=" pe-1 " alt=" " />Thời gian đầu tư
+                        </p>
+                        <p>6 tháng</p>
+                    </div>
+                    <div class=" container justify-content-between p-0 ">
+                        <p class=" card-text profit p-0 ">
+                            <img src=" img/profit.png " class=" pe-1 " alt=" " />Lợi nhuận kỳ vọng
+                        </p>
+                        <p>20%</p>
+                    </div>
+                    <div class=" progress ">
+                        <div class=" progress-bar " style=" width: 50% "></div>
+                    </div>
+                    <div class=" container people justify-content-between p-0 ">
+                        <p class=" card-text ">500 nhà đầu tư</p>
+                        <p>5000/10000</p>
+                    </div>
+
+                    <div class=" container p-0 ">
+                        <a href=" # " class=" btn btn-detail ">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
-            <div class="card p-2 m-3" style="width: 400px">
-                <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
+            <div class=" card p-2 m-3 " style=" width: 400px ">
+                <img class=" card-img-top " src=" img/product2.png " alt=" Card image " style=" width: 100% " />
 
-                <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
-                        </div>
+                <div class=" card-body ">
+                    <div class=" icon ">
+                        <p class=" card-text adr my-2 ">
+                            <img src=" img/clock.png " class=" pe-1 " alt=" " />Phu Quoc, Vietnam
+                        </p>
                     </div>
-                    <p class="card-text">
-                        Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
-                    </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
-                    </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <h5 class=" card-text title ">Metaway Grand City</h5>
+                    <div>
+                        <p class=" card-text slot py-2 ">
+                            <img src=" img/slot.png " class=" pe-1 " alt=" " />1000 suất
+                        </p>
+                    </div>
+                    <p class=" card-text status m-0 py-2 ">Đang mở bán</p>
+                    <div class=" container justify-content-between mt-2 p-0 ">
+                        <p class=" card-text time ">
+                            <img src=" img/address.png " class=" pe-1 " alt=" " />Thời gian đầu tư
+                        </p>
+                        <p>6 tháng</p>
+                    </div>
+                    <div class=" container justify-content-between p-0 ">
+                        <p class=" card-text profit p-0 ">
+                            <img src=" img/profit.png " class=" pe-1 " alt=" " />Lợi nhuận kỳ vọng
+                        </p>
+                        <p>20%</p>
+                    </div>
+                    <div class=" progress ">
+                        <div class=" progress-bar " style=" width: 50% "></div>
+                    </div>
+                    <div class=" container people justify-content-between p-0 ">
+                        <p class=" card-text ">500 nhà đầu tư</p>
+                        <p>5000/10000</p>
+                    </div>
+
+                    <div class=" container p-0 ">
+                        <a href=" # " class=" btn btn-detail ">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container mt-3">
+        <div class=" container mt-3 ">
             <!-- start -->
-            <div class="card p-2 m-3" style="width: 400px">
-                <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
+            <div class=" card p-2 m-3 " style=" width: 400px ">
+                <img class=" card-img-top " src=" img/product2.png " alt=" Card image " style=" width: 100% " />
 
-                <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
-                        </div>
+                <div class=" card-body ">
+                    <div class=" icon ">
+                        <p class=" card-text adr my-2 ">
+                            <img src=" img/clock.png " class=" pe-1 " alt=" " />Phu Quoc, Vietnam
+                        </p>
                     </div>
-                    <p class="card-text">
-                        Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
-                    </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
-                    </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <h5 class=" card-text title ">Metaway Grand City</h5>
+                    <div>
+                        <p class=" card-text slot py-2 ">
+                            <img src=" img/slot.png " class=" pe-1 " alt=" " />1000 suất
+                        </p>
+                    </div>
+                    <p class=" card-text status m-0 py-2 ">Đang mở bán</p>
+                    <div class=" container justify-content-between mt-2 p-0 ">
+                        <p class=" card-text time ">
+                            <img src=" img/address.png " class=" pe-1 " alt=" " />Thời gian đầu tư
+                        </p>
+                        <p>6 tháng</p>
+                    </div>
+                    <div class=" container justify-content-between p-0 ">
+                        <p class=" card-text profit p-0 ">
+                            <img src=" img/profit.png " class=" pe-1 " alt=" " />Lợi nhuận kỳ vọng
+                        </p>
+                        <p>20%</p>
+                    </div>
+                    <div class=" progress ">
+                        <div class=" progress-bar " style=" width: 50% "></div>
+                    </div>
+                    <div class=" container people justify-content-between p-0 ">
+                        <p class=" card-text ">500 nhà đầu tư</p>
+                        <p>5000/10000</p>
+                    </div>
+
+                    <div class=" container p-0 ">
+                        <a href=" # " class=" btn btn-detail ">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
             <!-- end -->
-            <div class="card p-2 m-3" style="width: 400px">
-                <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
+            <div class=" card p-2 m-3 " style=" width: 400px ">
+                <img class=" card-img-top " src=" img/product2.png " alt=" Card image " style=" width: 100% " />
 
-                <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
-                        </div>
+                <div class=" card-body ">
+                    <div class=" icon ">
+                        <p class=" card-text adr my-2 ">
+                            <img src=" img/clock.png " class=" pe-1 " alt=" " />Phu Quoc, Vietnam
+                        </p>
                     </div>
-                    <p class="card-text">
-                        Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
-                    </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
-                    </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <h5 class=" card-text title ">Metaway Grand City</h5>
+                    <div>
+                        <p class=" card-text slot py-2 ">
+                            <img src=" img/slot.png " class=" pe-1 " alt=" " />1000 suất
+                        </p>
+                    </div>
+                    <p class=" card-text status m-0 py-2 ">Đang mở bán</p>
+                    <div class=" container justify-content-between mt-2 p-0 ">
+                        <p class=" card-text time ">
+                            <img src=" img/address.png " class=" pe-1 " alt=" " />Thời gian đầu tư
+                        </p>
+                        <p>6 tháng</p>
+                    </div>
+                    <div class=" container justify-content-between p-0 ">
+                        <p class=" card-text profit p-0 ">
+                            <img src=" img/profit.png " class=" pe-1 " alt=" " />Lợi nhuận kỳ vọng
+                        </p>
+                        <p>20%</p>
+                    </div>
+                    <div class=" progress ">
+                        <div class=" progress-bar " style=" width: 50% "></div>
+                    </div>
+                    <div class=" container people justify-content-between p-0 ">
+                        <p class=" card-text ">500 nhà đầu tư</p>
+                        <p>5000/10000</p>
+                    </div>
+
+                    <div class=" container p-0 ">
+                        <a href=" # " class=" btn btn-detail ">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
-            <div class="card p-2 m-3" style="width: 400px">
-                <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
+            <div class=" card p-2 m-3 " style=" width: 400px ">
+                <img class=" card-img-top " src=" img/product2.png " alt=" Card image " style=" width: 100% " />
 
-                <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
-                        </div>
+                <div class=" card-body ">
+                    <div class=" icon ">
+                        <p class=" card-text adr my-2 ">
+                            <img src=" img/clock.png " class=" pe-1 " alt=" " />Phu Quoc, Vietnam
+                        </p>
                     </div>
-                    <p class="card-text">
-                        Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
-                    </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
-                    </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <h5 class=" card-text title ">Metaway Grand City</h5>
+                    <div>
+                        <p class=" card-text slot py-2 ">
+                            <img src=" img/slot.png " class=" pe-1 " alt=" " />1000 suất
+                        </p>
+                    </div>
+                    <p class=" card-text status m-0 py-2 ">Đang mở bán</p>
+                    <div class=" container justify-content-between mt-2 p-0 ">
+                        <p class=" card-text time ">
+                            <img src=" img/address.png " class=" pe-1 " alt=" " />Thời gian đầu tư
+                        </p>
+                        <p>6 tháng</p>
+                    </div>
+                    <div class=" container justify-content-between p-0 ">
+                        <p class=" card-text profit p-0 ">
+                            <img src=" img/profit.png " class=" pe-1 " alt=" " />Lợi nhuận kỳ vọng
+                        </p>
+                        <p>20%</p>
+                    </div>
+                    <div class=" progress ">
+                        <div class=" progress-bar " style=" width: 50% "></div>
+                    </div>
+                    <div class=" container people justify-content-between p-0 ">
+                        <p class=" card-text ">500 nhà đầu tư</p>
+                        <p>5000/10000</p>
+                    </div>
+
+                    <div class=" container p-0 ">
+                        <a href=" # " class=" btn btn-detail ">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
-            <div class="card p-2 m-3" style="width: 400px">
-                <img class="card-img-top" src="img/product2.png" alt="Card image" style="width: 100%" />
+            <div class=" card p-2 m-3 " style=" width: 400px ">
+                <img class=" card-img-top " src=" img/product2.png " alt=" Card image " style=" width: 100% " />
 
-                <div class="card-body">
-                    <div class="container mt-2 icon">
-                        <h5 class="card-title">5.5 tỷ</h5>
-                        <div class="icon-br">
-                            <img src="img/bedroom.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Group.png" alt="" />
-                            <p>2</p>
-                        </div>
-                        <div class="icon-br">
-                            <img src="img/Path.png" alt="" />
-                            <p>70.8m2</p>
-                        </div>
+                <div class=" card-body ">
+                    <div class=" icon ">
+                        <p class=" card-text adr my-2 ">
+                            <img src=" img/clock.png " class=" pe-1 " alt=" " />Phu Quoc, Vietnam
+                        </p>
                     </div>
-                    <p class="card-text">
-                        Căn hộ Kingdom 101 có 2 phòng ngủ, diện tích 70.8m2 nội thất cơ bản.
-                    </p>
-                    <p class="card-text">
-                        <img src="img/clock.png" alt="" />Tô Hiến Thành, Phường 14, Quận 10,
-                        Hồ Chí Minh
-                    </p>
-                    <p class="card-text">
-                        <img src="img/address.png" alt="" />2 giờ trước
-                    </p>
-                    <div class="container">
-                        <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                    <h5 class=" card-text title ">Metaway Grand City</h5>
+                    <div>
+                        <p class=" card-text slot py-2 ">
+                            <img src=" img/slot.png " class=" pe-1 " alt=" " />1000 suất
+                        </p>
+                    </div>
+                    <p class=" card-text status m-0 py-2 ">Đang mở bán</p>
+                    <div class=" container justify-content-between mt-2 p-0 ">
+                        <p class=" card-text time ">
+                            <img src=" img/address.png " class=" pe-1 " alt=" " />Thời gian đầu tư
+                        </p>
+                        <p>6 tháng</p>
+                    </div>
+                    <div class=" container justify-content-between p-0 ">
+                        <p class=" card-text profit p-0 ">
+                            <img src=" img/profit.png " class=" pe-1 " alt=" " />Lợi nhuận kỳ vọng
+                        </p>
+                        <p>20%</p>
+                    </div>
+                    <div class=" progress ">
+                        <div class=" progress-bar " style=" width: 50% "></div>
+                    </div>
+                    <div class=" container people justify-content-between p-0 ">
+                        <p class=" card-text ">500 nhà đầu tư</p>
+                        <p>5000/10000</p>
+                    </div>
+
+                    <div class=" container p-0 ">
+                        <a href=" # " class=" btn btn-detail ">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class=" container pt-5 ">
+            <button class=" btn ">Xem tất cả</button>
+        </div>
 
-    </div>
+        <div class=" container mb-5 ">
+            <div class=" header-text mt-5 pt-5">
+                        <h2>Đối tác</h2>
+                    </div>
+                </div>
+
+                <div id="demo " class="carousel slide mb-5 pb-5 " data-bs-ride="carousel ">
+                    <!-- The slideshow/carousel -->
+
+                    <div class="carousel-item active ">
+                        <div class="container slide-logo ">
+                            <img src="img/logo-brand.png " alt=" " class=" " />
+                            <img src="img/logo-brand-3.png " alt="Chicago " class=" " />
+                            <img src="img/logo-brand-2.png " alt="Chicago " class=" " />
+                            <img src="img/logo-brand-4.png " alt="Chicago " class=" " />
+                            <img src="img/logo-brand-5.png " alt="Chicago " class=" " />
+                            <img src="img/logo-brand-1.png " alt="Chicago " class=" " />
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="container slide-logo ">
+                            <img src="img/logo-brand.png " alt=" " class=" " />
+                            <img src="img/logo-brand-3.png " alt="Chicago " class=" " />
+                            <img src="img/logo-brand-2.png " alt="Chicago " class=" " />
+                            <img src="img/logo-brand-4.png " alt="Chicago " class=" " />
+                            <img src="img/logo-brand-5.png " alt="Chicago " class=" " />
+                            <img src="img/logo-brand-1.png " alt="Chicago " class=" " />
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="container slide-logo ">
+                            <img src="img/logo-brand.png " alt=" " class=" " />
+                            <img src="img/logo-brand-3.png " alt="Chicago " class=" " />
+                            <img src="img/logo-brand-2.png " alt="Chicago " class=" " />
+                            <img src="img/logo-brand-4.png " alt="Chicago " class=" " />
+                            <img src="img/logo-brand-5.png " alt="Chicago " class=" " />
+                            <img src="img/logo-brand-1.png " alt="Chicago " class=" " />
+                        </div>
+                    </div>
+
+                    <!-- Indicators/dots -->
+                    <!-- <div class="carousel-indicators mt-5 ">
+                <button type="button " data-bs-target="#demo " data-bs-slide-to="0 " class="active "></button>
+                <button type="button " data-bs-target="#demo " data-bs-slide-to="1 "></button>
+                <button type="button " data-bs-target="#demo " data-bs-slide-to="2 "></button>
+            </div> -->
+                </div>
+
+                <div class="line mt-5 "></div>
+
+                <div class="footer mt-5 pt-5 ">
+                    <div class="logo-footer ">
+                        <img src="img/Group 2.png " alt=" " />
+                    </div>
+
+                    <div class="infor-footer ">
+                        <div class="contact ">
+                            <div class="infor-contact ">
+                                <p>Siêu ứng dụng quản lý và đầu tư bất động sản số</p>
+                            </div>
+                            <div class="address-footer ">
+                                <div class="img-address-footer ">
+                                    <img src="img/clock.png " alt=" " />
+                                </div>
+                                <div class="text-address-footer ">
+                                    <p>
+                                        Lô CX01, Khu đô thị Văn Khê, phường La Khê, Quận Hà Đông, Thành phố Hà Nội, Việt
+                                        Nam
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mail-footer ">
+                                <div class="img-mail ">
+                                    <img src="img/mail.png " alt=" " />
+                                </div>
+                                <div class="text-mail ">
+                                    <p>support@pindias.com</p>
+                                </div>
+                            </div>
+                            <div class="compass-footer ">
+                                <div class="img-compass ">
+                                    <img src="img/compass.png " alt=" " />
+                                </div>
+                                <div class="text-compass ">
+                                    <p>www.pindias.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="direct ">
+                            <div class="direct-list ">
+                                <div class="list-name ">
+                                    <p>Điều hướng</p>
+                                </div>
+                                <div class="list ">
+                                    <div class="list-left ">
+                                        <p>Công ty</p>
+                                        <p>Mua bán</p>
+                                        <p>Cho thuê</p>
+                                        <p>Dự án</p>
+                                        <p>Giao dịch</p>
+                                    </div>
+                                    <div class="list-right ">
+                                        <p>Đối tác</p>
+                                        <p>Hướng dẫn</p>
+                                        <p>Tin tức</p>
+                                        <p>FAQ</p>
+                                        <p>Liên hệ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sign-up ">
+                            <div class="signup-info ">
+                                <div class="text-sign-up ">
+                                    <p>Đăng ký nhận thông tin</p>
+                                </div>
+                                <div class="input-plane ">
+                                    <input type="text " class="txt-signup " placeholder="Info@yourgmail.com " />
+
+                                    <img src="img/plane.png " alt=" " />
+                                </div>
+
+                                <div class="social ">
+                                    <p>Mạng xã hội</p>
+                                </div>
+                                <div class="logo-social ">
+                                    <img src="img/fb-p.png " alt=" " />
+                                    <img src="img/linkedin-p.png " alt=" " />
+                                    <img src="img/tw-p.png " alt=" " />
+                                    <img src="img/yt-p.png " alt=" " />
+                                </div>
+                                <div class="download ">
+                                    <p>Tải xuống</p>
+                                </div>
+                                <div class="apps ">
+                                    <img src="img/image 3.png " alt=" " />
+                                    <img src="img/image 4.png " alt=" " />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+                <div class="line mt-5 "></div>
+                <div class="copyright ">
+                    <p>
+                        Copyright © 2021 - 2022 Pindias.com. All rights reserved Privacy Notice Legal Status Cookie
+                        Preferences
+                    </p>
+                </div>
+            </div>
 </body>
 
 </html>

@@ -1,0 +1,97 @@
+/* this is header */
+header .navbar .nav-item a{
+    color: #58595b;
+    font-weight: 600;
+}
+header .navbar .nav-item.active{
+    background: linear-gradient(90deg, rgba(92,45,145,1) 0%, rgba(129,41,144,1) 50%, rgba(163,35,142,1) 100%);
+    border-radius: 5px;
+}
+
+/* homepage is here */
+#homepage .banner {
+  padding: 180px 0 300px;
+}
+#homepage .banner video {
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#homepage .banner .container h1 {
+  color: #ffffff;
+}
+#homepage .banner .container h6 {
+  color: #ffffff;
+  padding-top: 16px;
+}
+#homepage .banner .d-flex {
+  text-decoration: none;
+  color: #701e87;
+}
+#homepage .banner .d-flex a {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 14px 20px 14px 25px;
+  margin: 24px;
+  font-weight: 400;
+}
+
+/* sale page */
+#sale-page{
+    width: 100%;
+    margin-top: -100px;
+}
+#sale-page .container{
+    background: linear-gradient(90deg, rgba(92,45,145,1) 0%, rgba(129,41,144,1) 50%, rgba(163,35,142,1) 100%);
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 5px;
+}
+#sale-page .container .nav-link{
+    color: #ffffff;
+}
+#sale-page .d-flex{
+    height: 50px;
+}
+#sale-page .d-flex .icon-search{
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 5px 0 0 5px;
+}
+#sale-page .d-flex .text-search{
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+}
+#sale-page .d-flex .btn{
+
+    background-color: #ffffff;
+    color: #701E87;
+    font-weight: 500;
+}
+
+/* bds for you */
+#for-you .container .header-content {
+    color: rgba(129,41,144,1);
+}
+#for-you .d-flex .border {
+    border-radius: 5px;
+}
+#for-you .d-flex ul{
+    border-radius: 5px;
+}
+#for-you .d-flex ul li{
+border-radius: 5px;
+}
+#for-you .d-flex a{
+    font-weight: 700;
+    color: #802990;
+}
+#for-you .d-flex .btn{
+    color: #802990;
+    font-weight: 700;
+}
+.btn.dropdown-toggle.left{
+    padding: 16px 0 16px 0;
+}
+

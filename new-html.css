@@ -624,6 +624,9 @@ footer .col-md-4 .text-footer {
 #for-you .header-content{
   margin: 0 0 50px;
 }
+.navbar-collapse {
+  align-items: initial;
+}
   #member .ms {
     content: center;
   }
